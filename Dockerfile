@@ -10,6 +10,8 @@ COPY . .
 
 # VOLUME ["/app/node_modules"]
 
-EXPOSE 80
+ENV PORT=80
+
+EXPOSE $PORT
 
 CMD ["npm", "start"]
